@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>검색</title>
+    <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .title {
+            width: 400px;
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        .search {
+            position: relative;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+        }
+        input {
+            width: 100%;
+            border-radius: 20px;
+            border: 1px solid #bbb;
+            margin: 10px 0;
+            padding: 10px 12px;
+            font-family: FontAwesome;
+        }
+        .box {
+            border-radius: 20px;
+            position: relative;
+            text-align: center;
+            width: 400px;
+            left: 36.5%;
+            margin: 0 auto;
+            background-color: #FFC300;
+            color: dimgrey;
+        }
+        .mainLoginInput::-webkit-input-placeholder {
+            font-family: FontAwesome;
+            font-weight: normal;
+            overflow: visible;
+            vertical-align: top;
+            display: inline-block !important;
+            padding-left: 5px;
+            padding-top: 2px;
+            color: hsl(9, 40%, 60%);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://pds.saramin.co.kr/company/logo/201902/27/pnkjzd_i4g3-0_logo.jpg" class="title")>
+
+    <form action="/multiSearchEjs" method="post">
+        <div class="search">
+            <input type="text" placeholder="&#xf002;" name="query" id="query"/>
+        </div>
+
+        <input type="submit" class="box" value="검색">
+    </form>
+
+    <br><br>
+    <div id="app" class="container">
+        <table class="table table-striped table-hover">
+
+        </table>
+    </div>
+</body>
+</html>
